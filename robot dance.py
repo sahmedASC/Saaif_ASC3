@@ -5,20 +5,21 @@ from Myro import *
 
 #verse
 x=0
+s=1
 while x<4:
     i=0
-    while i<6:
-        turnRight(1,.1)
-        turnLeft(1,.2)
-        turnRight(1,.2)
-        turnLeft(1,.1)
+    while i<3:
+        turnRight(s,.1)
+        turnLeft(s,.2)
+        turnRight(s,.2)
+        turnLeft(s,.1)
         i=i+1
 
-    forward(1,.5)
-    backward(1,.5)
-    forward(1,.5)
-    backward(1,.5)
-    turnBy(60)
+    forward(s,.4)
+    backward(s,.4)
+    forward(s,.4)
+    backward(s,.4)
+    turnBy(90)
     x=x+1
 #chorus
 
