@@ -5,10 +5,10 @@ from random import *
 import re
 import sys
 
-global user=""
+global user
 
 def setup_graphics():
-    user = input("What color do you want? Red, Yellow, Green, Blue")
+   ## user = input("What color do you want? Red, Yellow, Green, Blue")
     
     #Even More Setup
     width = 500
@@ -118,6 +118,8 @@ def find_the_blob_red():
         takePicture()
 
     while findColorSpot(pic, 1)<200:
+        pic = takePicture()
+        takePicture()
         forward(1,1)
 
 def find_the_blob_blue():
@@ -168,7 +170,7 @@ def find_the_blob_yellow():
 #What runs depending on user input
 #Asks the user a question
 def main():
-    
+    user = input("What color do you want? Red, Yellow, Green, Blue")
     setup_graphics()
     if user == "Red":
         find_the_blob_red()
@@ -181,6 +183,7 @@ def main():
     else:
         print("wrong Input")
         sys.exit()
+    #setup_graphics()
         
    
 #^^^^^Forces the user to input a "color".
