@@ -1,8 +1,8 @@
 from random import *
 xcoor=randrange(600)
 ycoor=randrange(600)
-speedX=randrange(3)
-speedY=randrange(3)
+speedX=randrange(0,3)
+speedY=randrange(0,3)
 def setup():
     size(600,600)
     fill(randrange(255), randrange(255), randrange(255))
